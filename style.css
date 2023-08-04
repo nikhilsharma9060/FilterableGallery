@@ -1,0 +1,63 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body{
+    background-color: cornsilk;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.title{
+    background-color: navy;
+    color: gold;
+    padding: 12px;
+    text-align: center;
+}
+
+#filter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+
+.filter-element{
+    background-color:blue;
+    color: red;
+    padding: 12px 24px;
+    border-radius: 20px;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.filter-element:hover{
+    background-color: white;
+}
+
+.filter-active{
+    background-color: black;
+}
+
+#gallery-container{
+    width: 90%;
+    margin: 0 auto;
+    column-count: 3;
+    column-gap: 0.5rem;
+}
+
+.gallery-image{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-image.hide-image{
+    display:none;
+}
+
+@media (max-width: 920px){
+    #gallery-conainer {
+        column-count : 2;
+    }
+}
